@@ -218,5 +218,64 @@ p {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.contactinfo{
+  background-image: url("flower2.jpg");
+  padding: 40px 50px 150px 50px;
+  align-items: stretch;
+}
+
+.contactme{
+  background-color: rgb(236, 229, 208, 0.35);
+  padding: 20px 20px;
+  position: relative;
+  margin: 25px 70px ;
+  border-radius: 25px;
+
+}
+.inquiry{
+  font-size: 44px;
+  margin: 10px 0 0 200px;
+  padding-left: 70px;
+  
+}
+
+.work{
+  font-size: 30px;
+  margin: 10px 0 0 200px;
+  padding-left: 70px;
+ 
+}
+
+.contact-link a{
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #f0d8a6;
+  border-radius: 15px;
+  border: 0.5px solid #f0b331;
+  box-shadow: 5px 5px 5px rgb(212, 189, 162);
+  color: black;
+  opacity: 0.8;
+}
+.contact-link a:hover {
+  background: #ECC377;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  background-color: #667DA5; /* Adjust as needed */
+  color: white; /* Adjust text color as needed */
+  padding: 25px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px; /* Adjust spacing between links */
+}
   /* #ffd3da   */
 
