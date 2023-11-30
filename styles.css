@@ -1,0 +1,222 @@
+:root {
+    --branding-color: #716277;
+    --secondary-color: #cec0da;
+    --third-color:#b3d5ad;
+    --heading-font-family: "Playfair Display", serif;
+    --default-font-family: "Poppins", sans-serif;
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: var(--default-font-family);
+    background-image: url("img/white.jpg");
+    margin: 0;
+    padding: 0;
+  }
+
+  /*Navigation bar decoration */
+
+nav {
+    margin: 5px auto;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box; 
+    
+  }
+  
+nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 60px;
+    margin-left: 25px;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+    font-weight: 700;
+  }
+  
+nav a:hover,
+nav li.active a {
+    color: var(--branding-color);
+  }
+
+  /* Logo image size */
+.logo {
+    max-height: 50px;
+    margin-left: -50px;
+  }  
+   
+  
+  /* Text in the middle - Hello..  */ /*  Change color, font, size*/
+h1,
+h2,
+h4
+  {
+      color: #3c3a52;
+      font-family: var(--heading-font-family);
+      font-weight: bolder;
+    }
+  
+  /* Profile pic next to Hello - Need to make it resposive when adjusting the size of screen. Also fix it one place without moving..
+  Change picture also, and borders */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img{
+  padding-left: 50px;
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background: transparent;
+    border-radius: 250px; /* Add rounded corners to the image */
+    box-shadow: 0 5px 10px rgba(141, 166, 217, 0.5);   
+}
+
+  /* Main block of webpage - need to make background image fit in correctly, so all fits in, adjust padding or margins, have equal 
+  size on sides of screen... make responsive too */
+.main {
+  /* background: var(--secondary-color); */
+  text-align: left;
+  padding-top: 150px;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 200px;
+  background-image: url("img/flower3.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center ;
+}
+
+.main h2 {
+  font-family: var(--heading-font-family);
+  line-height: 1.5;
+  font-size: 65px;
+  font-weight: 900;
+  color: #3c3a52;
+}
+
+.main h1{
+  font-family: var(--heading-font-family);
+  font-size: 100px;
+  font-weight: 900;
+  color: #3c3a52;
+}
+
+.main h4{
+  font-family: var(--heading-font-family);
+  font-size: 30px;
+}
+
+/* Second block of information on webpage... */
+.highlights {
+  /* background: var(--third-color);  TESTING TO BE CHNAGED */
+  text-align: justify;
+  padding: 30px 50px 50px 50px;
+  background-image: url("img/flower5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  }
+
+/* projects paragraph - adjust size */
+.shortproject{ 
+  background: none;
+  font-size: 44px;
+  font-weight: 700;
+  padding: 15px auto;
+  padding-bottom: 25px;
+  font-family: var( --heading-font-family);
+  color: #3c3a52;
+  
+  }
+
+.weather{ /* div for weather */
+  padding: 20px 20px 10px 20px;
+  position: relative;
+  margin: 25px 70px ;
+  background-color: rgb(236, 229, 208, 0.35);
+  border-radius: 25px;
+}
+
+#weather-app{
+  font-size: 38px;
+  padding-bottom: 25px;
+}
+
+/* image for weather app - adjust size, and margins/paddings */
+.weatherapp{  
+   max-width: 100%;  
+  height: auto;
+  display: block;
+  border-radius: 145px; /* Add rounded corners to the image */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* all paragraphs */
+p {   
+  background-color: rgba(246, 223, 181, 0.35);  /* maing slightly transparent background */
+  padding: 20px 20px;   /* might need to change*/ 
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*Link - learn more */
+.project-link a{
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #C1C595;
+  border-radius: 15px;
+  border: 0.5px solid #7B8049;
+  box-shadow: 5px 5px 5px rgb(212, 189, 162);
+  color: black;
+  opacity: 0.8;
+  }
+
+  /* div for clock */
+.clock{
+  background-color: rgb(236, 229, 208, 0.35);
+  padding: 20px 20px;
+  position: relative;
+  margin: 25px 70px ;
+  border-radius: 25px;
+}
+
+#world-clock{
+  font-size: 38px;
+  padding-bottom: 25px;
+}
+
+/* image for clock - adjust size, and margins/paddings */
+.worldclock{  
+   max-width: 100%;  
+  height: auto;
+  display: block;
+  border-radius: 145px; /* Add rounded corners to the image */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+  /* #ffd3da   */
+

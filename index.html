@@ -7,148 +7,110 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />    
+    <link rel="stylesheet" href="styles.css" />    
     <title>Portfolio-Main page</title>
 </head>
 <body>
-    <div class="container"> 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"> <img src="logo.png" alt="" width="100"> </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#aboutme">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+    <div class="container">
+        <nav class="d-flex justify-content-between">
+          <img
+            src="img/logo.png"
+            class="logo d-none d-md-block"
+            alt="MV logo"
+            width="130" height="50"
+          />
+          <ul>
+            <li class="active">
+              <a href="/index.html" title="Homepage">Home</a>
+            </li>
+            <li>
+              <a href="/work.html" title="Places we have visited">Projects</a>
+            </li>
+            <li>
+              <a href="/about.html" title="About Sunrise tours">About</a>
+            </li>
+            <li>
+              <a href="/contact.html" title="Contact page">Contact</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
 
-          <br>
-
+       <div class="main">
         <div class="row">
-            <div class="col-6">
-                <br>
-                <h2> Hello, </h2>
-                <h1> I'm Mila</h1>
-                <h4> Front-end developer based in London, UK</h4>
+          <div class="col">
+            <h2>Hello,</h2>
+            <h1> I'm Mila</h1>
+            <br>
+            <h4> Front-end developer based in London, UK</h4>
+          </div>
+
+          <div class="col">
+            <div class="img">
+              <img class="profile-pic" src="img/profilepic.png" alt="" width="380">
             </div>
-            <div class="col-6">
-                <div class="frame">
-                    <img src="pic21.jpg" alt="" width="300">
-                </div>
-            </div>
-
-            <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-                eos eveniet alias temporibus deserunt veritatis minima fugiat
-                explicabo eum dolore.
-              </p>
-              <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-                eos eveniet alias temporibus deserunt veritatis minima fugiat
-                explicabo eum dolore.
-              </p>
-              <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-                eos eveniet alias temporibus deserunt veritatis minima fugiat
-                explicabo eum dolore.
-              </p>
-              <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-                eos eveniet alias temporibus deserunt veritatis minima fugiat
-                explicabo eum dolore.
-              </p>
-              <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-                eos eveniet alias temporibus deserunt veritatis minima fugiat
-                explicabo eum dolore.
-              </p>
-              <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-                eos eveniet alias temporibus deserunt veritatis minima fugiat
-                explicabo eum dolore.
-              </p>
-              <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-                eos eveniet alias temporibus deserunt veritatis minima fugiat
-                explicabo eum dolore.
-              </p>
-
-
-
-
+          </div>
 
         </div>
+      </div>
+<br>
+
+
+<div class="highlights">
+  <p class="shortproject">Project highlights</p>
+      <br>
+
+      <div class="weather">
+      <div class="row">
+      <div class="col-md-6">
+        <img src="img/weatherapp.png" class="weatherapp img-fluid rounded p-2 mb-5 " width="500" alt="Weather App"/>
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-start mb-3" id="weather-app">Weather app</h2>
+        <p class="text-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+          eos eveniet alias temporibus deserunt veritatis minima fugiat
+          explicabo eum dolore.
+        </p>
+        <br />
+        <div class="project-link mt-3">
+           <a class="link" href="/projects.html#weather-app" title="Weather App">Learn more</a>
+        </div>
+        </div>
     </div>
+  </div>
+    <br />
+
+    <div class="clock">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-start mb-3" id="world-clock">World Clock app</h2>
+        <p class="text-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+          eos eveniet alias temporibus deserunt veritatis minima fugiat
+          explicabo eum dolore.
+        </p>
+        <br />
+        <div class="project-link mt-3">
+           <a class="link" href="/projects.html#world-clock" title="World Clock">Learn more</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="img/worldclock.png" class="worldclock rounded p-2 mb-5 " width="500" alt="World Clock"/>
+      </div> 
+    </div>
+  </div>
+  </div>
+ <br />
+
+    </div>
+
+<div class="contactinfo">
+
+
+</div>
+
 </body>
 </html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        .container {
-            padding-top: 50px; /* Adjust as needed */
-        }
-
-        .rounded-frame {
-            border-radius: 10px; /* Adjust the border-radius for rounded corners */
-            overflow: hidden;
-        }
-
-        .rounded-frame img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
-    <title>Your Page Title</title>
-</head>
-<body>
-
-    <div class="container"> 
-        <div class="row">
-            <div class="col">
-                <h1> Hello, </h1>
-                <h2> I'm Mila</h2>
-                <h4> Front-end developer based in London, UK</h4>
-            </div>
-            <div class="col">
-                <div class="rounded-frame">
-                    <img src="pic2.jpg" alt="" width="300">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    Bootstrap JS and Popper.js are required for Bootstrap functionality -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
-</html> -->
