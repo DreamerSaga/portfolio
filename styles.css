@@ -127,7 +127,7 @@ img {
 
 /* Second block of information on webpage... */
 .highlights {
-  /* background: var(--third-color);  TESTING TO BE CHNAGED */
+ 
   text-align: justify;
   padding: 30px 50px 50px 50px;
   background-image: url("img/flower5.jpg");
@@ -136,7 +136,19 @@ img {
   background-repeat:no-repeat;
   overflow: hidden;
   }
-
+  .highlight-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust as needed */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weatherapp,
+  .worldclock {
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
 /* projects paragraph - adjust size */
 .shortproject{ 
   background: none;
@@ -150,9 +162,9 @@ img {
   }
 
 .weather{ /* div for weather */
-  padding: 20px 20px 10px 20px;
+  padding: 25px 25px 15px 25px;
   position: relative;
-  margin: 25px 70px ;
+  margin: 25px 70px 25px 70px;
   background-color: rgb(236, 229, 208, 0.35);
   border-radius: 25px;
 }
@@ -169,6 +181,7 @@ img {
   display: block;
   border-radius: 145px; /* Add rounded corners to the image */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 0 0 50px
 }
 
 /* all paragraphs */
@@ -198,9 +211,9 @@ p {
   /* div for clock */
 .clock{
   background-color: rgb(236, 229, 208, 0.35);
-  padding: 20px 20px;
+  padding: 25px 25px 15px 25px;
   position: relative;
-  margin: 25px 70px ;
+  margin: 25px 70px 25px 70px ;
   border-radius: 25px;
 }
 
@@ -216,6 +229,7 @@ p {
   display: block;
   border-radius: 145px; /* Add rounded corners to the image */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 50px;
 }
 
 .contactinfo{
@@ -234,18 +248,20 @@ p {
 }
 .inquiry{
   font-size: 44px;
-  margin: 10px 0 0 200px;
+  margin: 10px 0 0 170px;
   padding-left: 70px;
   
 }
 
 .work{
   font-size: 30px;
-  margin: 10px 0 0 200px;
+  margin: 10px 0 0 170px;
   padding-left: 70px;
  
 }
-
+.contact-link{
+ margin: 25px 70px ;
+}
 .contact-link a{
   font-size: 25px;
   font-weight: 500;
@@ -279,3 +295,24 @@ footer a {
 }
   /* #ffd3da   */
 
+.getintouch{
+  background-image: url("img/flower2.jpg");
+  /* background-size: 1627px 1245px; */
+  margin: 5px 0;
+  padding-bottom: 200px;
+}
+.getintouch h2{
+ padding: 50px 0;
+ text-align: center;
+ font-size: 44px;
+}
+.getintouch h3{
+  text-align: justify;
+  padding: 25px 230px ;
+  font-family: var(--default-font-family);
+}
+.getintouch h3 a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #272142;
+}
