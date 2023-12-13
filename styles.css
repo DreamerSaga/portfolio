@@ -64,10 +64,9 @@ h6 {
 }
 
 h1 {
-  font-size: 96px;
-  line-height: 1.5;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  font-size: 60px;
+  padding: 25px;
+  text-align: center;
 }
 
 h2 {
@@ -238,6 +237,76 @@ footer a {
   color: white;
   margin: 0 20px; /* Adjust spacing between links */
 }
+
+.getintouch{
+  background-image: url("img/flower2.jpg");
+  margin: 5px 0;
+  padding-bottom: 200px;
+}
+.getintouch h2{
+ padding: 50px 0;
+ text-align: center;
+ font-size: 44px;
+}
+.getintouch h3{
+  text-align: justify;
+  padding: 25px 230px ;
+  font-family: var(--default-font-family);
+}
+.getintouch h3 a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #272142;
+  text-decoration: underline;
+}
+.skills h3{
+  text-align: left;
+  padding: 30px 150px ;
+}
+.hobby h3{
+  text-align: left;
+  padding: 30px 150px ;
+}
+
+.hobby ul {
+  list-style: none;
+  padding: 30px 150px 50px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.hobby li {
+  margin-bottom: 15px; /* Adjust the margin as needed for spacing */
+  display: flex;
+  align-items: center;
+}
+
+.hobby li img {
+  margin-right: 20px; /* Adjust the margin as needed for spacing between icon and text */
+}
+
+.skills ul {
+  list-style: none;
+  padding: 30px 150px 50px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.skills li {
+  margin-bottom: 15px; /* Adjust the margin as needed for spacing */
+  display: flex;
+  align-items: center;
+}
+
+.skills li img {
+  margin-right: 20px; /* Adjust the margin as needed for spacing between icon and text */
+}
+
+
+
+
+
+
 
 @media (max-width: 900px) {
   .hero h1 {
