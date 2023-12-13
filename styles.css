@@ -6,161 +6,145 @@
     --default-font-family: "Poppins", sans-serif;
   }
 
-body, html {
-    margin: 0;
-    padding: 0;
-  }
 
+  
 body {
     font-family: var(--default-font-family);
     background-image: url("img/white.jpg");
-    margin: 0;
-    padding: 0;
   }
-
-  /*Navigation bar decoration */
-
+  
+/*Navigation bar decoration */
 nav {
-    margin: 5px auto;
-    padding: 10px 0;
-    width: 100%;
-    box-sizing: border-box; 
-    
-  }
+  margin: 5px auto;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box; 
   
+}
+
 nav ul {
-    padding: 0;
-    margin: 0;
-  }
-  
+  padding: 0;
+  margin: 0;
+}
+
 nav li {
-    display: inline;
-    list-style: none;
-    line-height: 60px;
-    margin-left: 25px;
-  }
-  
+  display: inline;
+  list-style: none;
+  line-height: 60px;
+  margin-left: 25px;
+}
+
 nav a {
-    text-decoration: none;
-    color: #272142;
-    transition: all 100ms ease-in-out;
-    font-weight: 700;
-  }
-  
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+  font-weight: 700;
+}
+
 nav a:hover,
 nav li.active a {
-    color: var(--branding-color);
-  }
+  color: var(--branding-color);
+}
 
-  /* Logo image size */
+/* Logo image size */
 .logo {
-    max-height: 50px;
-    margin-left: -50px;
-  }  
-   
-  
-  /* Text in the middle - Hello..  */ /*  Change color, font, size*/
+  max-height: 50px;
+  margin-left: -50px;
+}  
+ 
 h1,
 h2,
-h4
-  {
-      color: #3c3a52;
-      font-family: var(--heading-font-family);
-      font-weight: bolder;
-    }
-  
-  /* Profile pic next to Hello - Need to make it resposive when adjusting the size of screen. Also fix it one place without moving..
-  Change picture also, and borders */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+h3,
+h4,
+h5,
+h6 {
+  color: #3c3a52;
+  font-family: var(--heading-font-family);
+  font-weight: bolder;
 }
 
-.img{
-  padding-left: 50px;
+h1 {
+  font-size: 96px;
+  line-height: 1.5;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-.profile-pic {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    background: transparent;
-    border-radius: 250px; /* Add rounded corners to the image */
-    box-shadow: 0 5px 10px rgba(141, 166, 217, 0.5);   
+h2 {
+  font-size: 74px;
 }
 
-  /* Main block of webpage - need to make background image fit in correctly, so all fits in, adjust padding or margins, have equal 
-  size on sides of screen... make responsive too */
-.main {
-  /* background: var(--secondary-color); */
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.hero {
+  background: var(--secondary-color);
   text-align: left;
-  padding-top: 150px;
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-bottom: 200px;
+  padding: 140px 200px;
   background-image: url("img/flower3.jpg");
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center ;
 }
 
-.main h2 {
+.hero p {
+  font-size: 66px;
+  font-weight: bolder;
+  margin: 0;
+  color: #272142;
+}
+
+.hero h1{
+  font-size: 85px;
+  line-height: 2.5;
+  color: #272142;
+}
+
+.hero h2 {
   font-family: var(--heading-font-family);
+  font-weight: normal;
   line-height: 1.5;
-  font-size: 65px;
-  font-weight: 900;
-  color: #3c3a52;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.main h1{
-  font-family: var(--heading-font-family);
-  font-size: 100px;
-  font-weight: 900;
-  color: #3c3a52;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.main h4{
-  font-family: var(--heading-font-family);
-  font-size: 30px;
+.img{
+margin-left: 65px;
 }
 
-/* Second block of information on webpage... */
-.highlights {
- 
-  text-align: justify;
-  padding: 30px 50px 50px 50px;
-  background-image: url("img/flower5.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  overflow: hidden;
-  }
-  .highlight-container {
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust as needed */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .weatherapp,
-  .worldclock {
-    border-radius: 10px; /* Add rounded corners to the image */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  }
-/* projects paragraph - adjust size */
-.shortproject{ 
-  background: none;
-  font-size: 44px;
-  font-weight: 700;
-  padding: 15px auto;
-  padding-bottom: 25px;
-  font-family: var( --heading-font-family);
-  color: #3c3a52;
-  
-  }
+.profile-pic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: transparent;
+  border-radius: 250px; /* Add rounded corners to the image */
+  box-shadow: 0 5px 10px rgba(141, 166, 217, 0.5);   
+}
 
+.highlights{
+  font-size: 27px;
+  font-weight: bolder;
+  padding: 30px 0;
+}
+
+.project-desciption {
+  padding: 40px 60px;
+}
+
+.weatherapp,
+.worldclock {
+  border-radius: 10px; /* Add rounded corners to the image */
+  box-shadow: 0 5px 10px rgb(121, 125, 74, 0.8);
+}
 .weather{ /* div for weather */
   padding: 25px 25px 15px 25px;
   position: relative;
@@ -168,47 +152,6 @@ img {
   background-color: rgb(236, 229, 208, 0.35);
   border-radius: 25px;
 }
-
-#weather-app{
-  font-size: 38px;
-  padding-bottom: 25px;
-}
-
-/* image for weather app - adjust size, and margins/paddings */
-.weatherapp{  
-   max-width: 100%;  
-  height: auto;
-  display: block;
-  border-radius: 145px; /* Add rounded corners to the image */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 0 0 0 50px
-}
-
-/* all paragraphs */
-p {   
-  background-color: rgba(246, 223, 181, 0.35);  /* maing slightly transparent background */
-  padding: 20px 20px;   /* might need to change*/ 
-  border-radius: 15px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-/*Link - learn more */
-.project-link a{
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 15px 20px;
-  background-color: #C1C595;
-  border-radius: 15px;
-  border: 0.5px solid #7B8049;
-  box-shadow: 5px 5px 5px rgb(212, 189, 162);
-  color: black;
-  opacity: 0.8;
-  }
-
-  /* div for clock */
 .clock{
   background-color: rgb(236, 229, 208, 0.35);
   padding: 25px 25px 15px 25px;
@@ -217,51 +160,52 @@ p {
   border-radius: 25px;
 }
 
-#world-clock{
-  font-size: 38px;
-  padding-bottom: 25px;
-}
-
-/* image for clock - adjust size, and margins/paddings */
-.worldclock{  
-   max-width: 100%;  
-  height: auto;
-  display: block;
-  border-radius: 145px; /* Add rounded corners to the image */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 0 50px;
-}
+.project-link a{
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #C1C595;
+  border-radius: 15px;
+  border: 0.5px solid rgb(121, 125, 74);
+  box-shadow: 5px 5px 5px rgb(212, 189, 162);
+  color: black;
+  opacity: 0.8;
+  }
+  
+.project-link a:hover{
+  background-color:#8a9c58;
+} 
 
 .contactinfo{
   background-image: url("flower2.jpg");
-  padding: 40px 50px 150px 50px;
+  padding: 40px 50px;
   align-items: stretch;
 }
 
 .contactme{
-  background-color: rgb(236, 229, 208, 0.35);
   padding: 20px 20px;
-  position: relative;
   margin: 25px 70px ;
   border-radius: 25px;
-
 }
+
 .inquiry{
   font-size: 44px;
   margin: 10px 0 0 170px;
   padding-left: 70px;
-  
 }
 
 .work{
   font-size: 30px;
   margin: 10px 0 0 170px;
   padding-left: 70px;
- 
 }
+
 .contact-link{
- margin: 25px 70px ;
+  margin: 25px 70px ;
+  padding: 25px 0;
 }
+
 .contact-link a{
   font-size: 25px;
   font-weight: 500;
@@ -274,6 +218,7 @@ p {
   color: black;
   opacity: 0.8;
 }
+
 .contact-link a:hover {
   background: #ECC377;
 }
@@ -293,26 +238,61 @@ footer a {
   color: white;
   margin: 0 20px; /* Adjust spacing between links */
 }
-  /* #ffd3da   */
 
-.getintouch{
-  background-image: url("img/flower2.jpg");
-  /* background-size: 1627px 1245px; */
-  margin: 5px 0;
-  padding-bottom: 200px;
-}
-.getintouch h2{
- padding: 50px 0;
- text-align: center;
- font-size: 44px;
-}
-.getintouch h3{
-  text-align: justify;
-  padding: 25px 230px ;
-  font-family: var(--default-font-family);
-}
-.getintouch h3 a{
-  text-decoration: none;
-  font-weight: 700;
-  color: #272142;
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 35px;
+    line-height: 15px;
+  }
+
+  .hero h2 {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+    text-align: center;
+  }
+  .hero p{
+    font-size: 25px;
+  }
+  .highlights{
+    font-size: 22px;
+    padding: 10px 0;
+
+  }
+
+  .project-desciption {
+    padding: 0;
+    text-align: center;
+  }
+
+  .contactinfo {
+    text-align: left;
+    padding: 80px 0; /* Adjust padding as needed */
+  }
+  .inquiry {
+    font-size: 30px; /* Adjust font size as needed */
+    margin: 10px 0 0; /* Adjust margin as needed */
+    line-height: 1.5;
+    
+  }
+  
+  .work {
+    font-size: 25px; /* Adjust font size as needed */
+    margin: 5px 0 0; /* Adjust margin as needed */
+    line-height: 1.5;
+  }
+  .contact-link {
+    margin: 20px 10px; /* Adjust margin as needed */
+    padding-bottom: 5px;
+  }
+  
+  .contact-link a {
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 22px;
+    
+  }
 }
