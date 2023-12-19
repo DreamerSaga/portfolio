@@ -78,7 +78,7 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
-
+/* HERO DIV - MAIN */
 .hero {
   background: var(--secondary-color);
   text-align: left;
@@ -100,6 +100,7 @@ p {
   font-size: 85px;
   line-height: 2.5;
   color: #272142;
+  
 }
 
 .hero h2 {
@@ -110,6 +111,7 @@ p {
   font-weight: bold;
 }
 
+/*PROFILE PIC */
 img {
   max-width: 100%;
   height: auto;
@@ -129,6 +131,7 @@ margin-left: 65px;
   box-shadow: 0 5px 10px rgba(141, 166, 217, 0.5);   
 }
 
+/*HIGHLIGHTS PARAGRAPH */
 .highlights{
   font-size: 27px;
   font-weight: bolder;
@@ -139,6 +142,7 @@ margin-left: 65px;
   padding: 40px 60px;
 }
 
+/*IMG FOR APPS + CONTAINERS */
 .weatherapp,
 .worldclock {
   border-radius: 10px; /* Add rounded corners to the image */
@@ -159,6 +163,7 @@ margin-left: 65px;
   border-radius: 25px;
 }
 
+/*LEARN MORE LINK */
 .project-link a{
   font-size: 18px;
   font-weight: 500;
@@ -176,6 +181,7 @@ margin-left: 65px;
   background-color:#8a9c58;
 } 
 
+/*WORK INQUIRY */
 .contactinfo{
   background-image: url("flower2.jpg");
   padding: 40px 50px;
@@ -222,6 +228,7 @@ margin-left: 65px;
   background: #ECC377;
 }
 
+/*FOOTER ON ALL PAGES */ 
 footer {
   display: flex;
   flex-direction: row;
@@ -238,6 +245,7 @@ footer a {
   margin: 0 20px; /* Adjust spacing between links */
 }
 
+/* CONTACT PAGE */
 .getintouch{
   background-image: url("img/flower2.jpg");
   margin: 5px 0;
@@ -259,18 +267,105 @@ footer a {
   color: #272142;
   text-decoration: underline;
 }
-.skills h3{
-  text-align: left;
-  padding: 30px 150px ;
+
+/*ABOUT ME PAGE */
+.about-section {
+  max-width: 1300px;
+  margin: 0 auto;
 }
-.hobby h3{
-  text-align: left;
-  padding: 30px 150px ;
+
+.aboutme {
+  margin-top: 20px;
+  background-color: rgb(236, 229, 208, 0.35); 
+  padding: 20px 50px;
+  border-radius: 10px; /* Add rounded corners to the box */
 }
+
+.aboutme p {
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold ; /* Remove default margin to reduce space */
+}
+
+.img1 {
+  margin-top: 20px;
+  margin-left: 100px;
+   /* Adjust the margin to create space between image and paragraph box */
+}
+
+.profile-pic1 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: transparent;
+  border-radius: 250px; /* Add rounded corners to the image */
+  box-shadow: 0 5px 10px rgba(141, 166, 217, 0.5);
+}
+
+.check-projects {
+  padding: 0 150px;
+}
+.check-projects a{
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: rgba(141, 166, 217);
+  border-radius: 15px;
+  border: 0.5px solid rgb(58, 111, 216);
+  box-shadow: 5px 5px 5px rgb(171, 186, 214);
+  color: black;
+  opacity: 0.8;
+  }
+  
+.check-projects a:hover{
+  background-color:rgb(34, 94, 212);
+} 
+
+.tech-skills h3{
+  text-align: left;
+  padding: 40px 130px 20px ;
+  font-size: 45px;
+}
+
+.skills h3,
+.hobby h3,
+.languages h3{
+  text-align: left;
+  padding: 40px 150px 20px ;
+  font-size: 45px;
+}
+
+.tech-skills {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+.techskills1 ul,
+.techskills2 ul {
+  list-style: none;
+  padding: 10px 150px 50px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.techskills1 li,
+.techskills2 li {
+  margin-bottom: 15px; /* Adjust the margin as needed for spacing */
+  display: flex;
+  align-items: center;
+}
+
+.techskills1 li img,
+.techskills2 li imf {
+  margin-right: 20px; /* Adjust the margin as needed for spacing between icon and text */
+}
+
 
 .hobby ul {
   list-style: none;
-  padding: 30px 150px 50px;
+  padding: 10px 150px 50px;
   font-size: 25px;
   font-weight: bolder;
 }
@@ -283,11 +378,12 @@ footer a {
 
 .hobby li img {
   margin-right: 20px; /* Adjust the margin as needed for spacing between icon and text */
+  
 }
 
 .skills ul {
   list-style: none;
-  padding: 30px 150px 50px;
+  padding: 10px 150px 50px;
   font-size: 25px;
   font-weight: bolder;
 }
@@ -302,12 +398,31 @@ footer a {
   margin-right: 20px; /* Adjust the margin as needed for spacing between icon and text */
 }
 
+.languages ul {
+  list-style: none;
+  padding: 10px 150px ;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.languages li {
+  margin-bottom: 15px; /* Adjust the margin as needed for spacing */
+  display: flex;
+  align-items: center;
+}
+
+.languages li img {
+  margin-right: 20px; /* Adjust the margin as needed for spacing between icon and text */
+
+}
 
 
 
 
 
 
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .hero h1 {
     font-size: 35px;
@@ -362,6 +477,87 @@ footer a {
     padding: 15px 10px;
     text-align: center;
     font-size: 22px;
-    
   }
+
+  h1{
+    font-size: 50px;
+  }
+
+  .tech-skills h3{
+    padding: 25px 0px 0px;
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  .skills h3,
+  .hobby h3,  
+  .languages h3 {
+    text-align: left;
+    padding: 25px 25px 0px;
+    font-size: 30px;
+  }
+
+  .techskills1 ul,
+  .techskills2 ul ,
+  .hobby ul,
+  .skills ul,
+  .languages ul {
+    padding: 0px 10px 0px;
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: left;
+  }
+
+  .techskills1 li,
+  .techskills2 li, 
+  .hobby li,
+  .skills li,
+  .languages li {
+    font-size: 12px;
+  }
+
+  .techskills1 li img,
+  .techskills2 li img,
+  .hobby li img,
+  .skills li img,
+  .languages li img {
+    margin-right: 5px;
+    width: 25px;
+  }
+
+   .getintouch h3 {
+    padding: 25px 15px;
+    font-size: 18px;
+  }
+  .getintouch h2{
+    font-size: 45px;
+    text-align: left;
+    padding: 50px 20px;
+  }
+
+  .about-section h1{
+    font-size: 45px;
+  }
+  .aboutme {
+    padding: 20px 20px; /* Adjust padding for smaller screens */
+  
+  }
+
+  .aboutme p{
+    font-size: 15px;
+  }
+
+  .check-projects {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .check-projects a {
+    padding: 15px 10px;
+    font-size: 15px;
+  }
+
+  /* .row > div {
+    flex: 0 0 100%; 
+    }  */
+    /* Make columns full width on smaller screens */
+ 
 }
