@@ -269,9 +269,25 @@ footer a {
 }
 
 /*ABOUT ME PAGE */
+.about-back{
+  background-image: url("img/flower5.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  
+}
+
+.skill-back{
+  background-image: url("img/flower2.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center ;
+  
+}
+
 .about-section {
   max-width: 1300px;
   margin: 0 auto;
+  
 }
 
 .aboutme {
@@ -417,9 +433,75 @@ footer a {
 }
 
 
+/*PROJECTS PAGE */
+.project-back{
+  background-image: url("img/flower2.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  padding: 20px;
+  
+}
 
+.projects-section h2{
+  font-size: 35px;
+}
 
+.projects-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.card {
+  flex: 1; /* Make each card take equal width */
+  margin-right: 20px; /* Add margin between cards */
+  background-color: rgb(244, 239, 231, 0.8); /* Set background color with transparency */
+  box-shadow: 5px 5px 5px rgb(212, 189, 162); /* Add a subtle shadow for depth */
+  border: 3px solid rgb(121, 125, 74);
+  margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+.card-body {
+  padding: 20px; /* Add padding to the card body */
+}
+
+.card:last-child {
+  margin-right: 0; /* Remove margin from the last card */
+}
+
+.card-img-top {
+  max-height: 450px; /* Set max height for the card images */
+  padding: 20px 15px; 
+
+  /* object-fit: cover; */
+   /* Make sure the image covers the whole space */
+}
+
+.card-body h3{
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.card-body p{
+  font-size: 16px;
+}
+
+.btn.btn-primary {
+  background-color:  #C1C595;
+  border: 1px solid rgb(121, 125, 74);
+  box-shadow: 5px 5px 5px rgb(212, 189, 162);
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.btn.btn-primary:hover {
+  background-color: #8a9c58;
+  border: 1px solid rgb(121, 125, 74);
+  box-shadow: 5px 5px 5px rgb(212, 189, 162);
+  color: black;
+  opacity: 0.8;
+}
 
 
 /* RESPONSIVE */
@@ -534,9 +616,12 @@ footer a {
     padding: 50px 20px;
   }
 
-  .about-section h1{
+  .about-section h1,
+  .projects-section h1,
+  .projects-section h1{
     font-size: 45px;
   }
+
   .aboutme {
     padding: 20px 20px; /* Adjust padding for smaller screens */
   
@@ -559,5 +644,23 @@ footer a {
     flex: 0 0 100%; 
     }  */
     /* Make columns full width on smaller screens */
+    
+  .card h3{
+    text-align: center;
+    font-size: 30px;
+  }
  
+  .card {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* .card-img-top {
+    display: none;  } */
+    /* Hide the image on smaller screens */
+  .col-md-6 {
+    margin-bottom: 20px; /* Add margin between the cards in responsive mode */
+  }
 }
+
+
